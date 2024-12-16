@@ -1,0 +1,15 @@
+PEP_PATH=/dellfsqd2/ST_OCEAN/USER/yangqi3/02_Project/02_nervous_system/02.cross-species/00.data/01.pep
+RESULT_PATH=/dellfsqd2/ST_OCEAN/USER/yangqi3/02_Project/02_nervous_system/02.cross-species/02.samap/01.blast
+mkdir -p ${RESULT_PATH}/job_out
+# qsub -cwd -l vf=10g,num_proc=8 -q st.q -o ${RESULT_PATH}/job_out -e ${RESULT_PATH}/job_out -P PARTER run_blast.sh --tr1 ${PEP_PATH}/LR_longest.pep --t1 prot --n1 LR --tr2 ${PEP_PATH}/CP_longest.pep --t2 prot --n2 CP --d d --threads 8
+qsub -cwd -l vf=10g,num_proc=8 -q st.q -o ${RESULT_PATH}/job_out -e ${RESULT_PATH}/job_out -P PARTER run_blast.sh --tr1 ${PEP_PATH}/LR_longest.pep --t1 prot --n1 LR --tr2 ${PEP_PATH}/SE_longest.pep --t2 prot --n2 SE --d d --threads 8
+qsub -cwd -l vf=10g,num_proc=8 -q st.q -o ${RESULT_PATH}/job_out -e ${RESULT_PATH}/job_out -P PARTER run_blast.sh --tr1 ${PEP_PATH}/LR_longest.pep --t1 prot --n1 LR --tr2 ${PEP_PATH}/AS_longest.pep --t2 prot --n2 AS --d d --threads 8
+qsub -cwd -l vf=10g,num_proc=8 -q st.q -o ${RESULT_PATH}/job_out -e ${RESULT_PATH}/job_out -P PARTER run_blast.sh --tr1 ${PEP_PATH}/LR_longest.pep --t1 prot --n1 LR --tr2 ${PEP_PATH}/MA_longest.pep --t2 prot --n2 MA --d d --threads 8
+qsub -cwd -l vf=10g,num_proc=8 -q st.q -o ${RESULT_PATH}/job_out -e ${RESULT_PATH}/job_out -P PARTER run_blast.sh --tr1 ${PEP_PATH}/LR_longest.pep --t1 prot --n1 LR --tr2 ${PEP_PATH}/OM_longest.pep --t2 prot --n2 OM --d d --threads 8
+qsub -cwd -l vf=10g,num_proc=8 -q st.q -o ${RESULT_PATH}/job_out -e ${RESULT_PATH}/job_out -P PARTER run_blast.sh --tr1 ${PEP_PATH}/LR_longest.pep --t1 prot --n1 LR --tr2 ${PEP_PATH}/DR_longest.cds --t2 nucl --n2 DR --d d --threads 8
+qsub -cwd -l vf=10g,num_proc=8 -q st.q -o ${RESULT_PATH}/job_out -e ${RESULT_PATH}/job_out -P PARTER run_blast.sh --tr1 ${PEP_PATH}/LR_longest.pep --t1 prot --n1 LR --tr2 ${PEP_PATH}/PA_longest.pep --t2 prot --n2 PA --d d --threads 8
+qsub -cwd -l vf=10g,num_proc=8 -q st.q -o ${RESULT_PATH}/job_out -e ${RESULT_PATH}/job_out -P PARTER run_blast.sh --tr1 ${PEP_PATH}/LR_longest.pep --t1 prot --n1 LR --tr2 ${PEP_PATH}/AM_longest.pep --t2 prot --n2 AM --d d --threads 8
+qsub -cwd -l vf=10g,num_proc=8 -q st.q -o ${RESULT_PATH}/job_out -e ${RESULT_PATH}/job_out -P PARTER run_blast.sh --tr1 ${PEP_PATH}/LR_longest.pep --t1 prot --n1 LR --tr2 ${PEP_PATH}/PV_longest.pep --t2 prot --n2 PV --d d --threads 8
+qsub -cwd -l vf=10g,num_proc=8 -q st.q -o ${RESULT_PATH}/job_out -e ${RESULT_PATH}/job_out -P PARTER run_blast.sh --tr1 ${PEP_PATH}/LR_longest.pep --t1 prot --n1 LR --tr2 ${PEP_PATH}/GG_longest.pep --t2 prot --n2 GG --d d --threads 8
+qsub -cwd -l vf=10g,num_proc=8 -q st.q -o ${RESULT_PATH}/job_out -e ${RESULT_PATH}/job_out -P PARTER run_blast.sh --tr1 ${PEP_PATH}/LR_longest.pep --t1 prot --n1 LR --tr2 ${PEP_PATH}/MM_longest.pep --t2 prot --n2 MM --d d --threads 8
+qsub -cwd -l vf=10g,num_proc=8 -q st.q -o ${RESULT_PATH}/job_out -e ${RESULT_PATH}/job_out -P PARTER run_blast.sh --tr1 ${PEP_PATH}/LR_longest.pep --t1 prot --n1 LR --tr2 ${PEP_PATH}/HS_longest.pep --t2 prot --n2 HS --d d --threads 8
